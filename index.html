@@ -11,9 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
  
-<!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-39NVY1DHSP"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-39NVY1DHSP');</script>
+<!-- GA4: uncomment when custom domain is live -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-36SH5FERR8"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-36SH5FERR8');</script>
+-->
  
 <style>
 :root{
@@ -117,11 +119,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
 .card{background:var(--off-white);border-radius:16px;padding:2rem;transition:transform 0.3s;position:relative;overflow:hidden;}
 .card:hover{transform:translateY(-5px);}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;}
-.card:nth-child(1)::before{background:var(--pink);}
-.card:nth-child(2)::before{background:var(--orange);}
-.card:nth-child(3)::before{background:var(--blue);}
-.card:nth-child(4)::before{background:var(--yellow);}
+.card::before{display:none;}
 .card-icon{font-size:1.3rem;margin-bottom:0.8rem;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--white);}
 .card:nth-child(1) .card-icon{background:var(--pink);}
 .card:nth-child(2) .card-icon{background:var(--orange);}
@@ -142,9 +140,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .how-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:1.8rem;transition:transform 0.2s;}
 .how-card:hover{transform:translateY(-3px);}
 .how-card h3{font-family:var(--heading);font-size:1rem;font-weight:600;margin-bottom:0.6rem;}
-.how-card:nth-child(1) h3{color:var(--pink);}
-.how-card:nth-child(2) h3{color:var(--orange);}
-.how-card:nth-child(3) h3{color:var(--yellow);}
+.how-card h3{color:var(--white);}
 .how-card p{font-size:0.92rem;color:rgba(255,255,255,0.75);line-height:1.6;}
 .dark-section .meta-line{font-size:0.95rem;color:rgba(255,255,255,0.55);margin-top:0.5rem;line-height:1.7;}
 .dark-section .meta-line strong{color:var(--white);}
@@ -305,7 +301,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
         <h2 class="section-heading">I've spent my <span class="pop">entire career</span> in events.</h2>
         <p style="margin-top:1.5rem;">Over 18 years across event management, B2B marketing, and event technology, working with enterprise organisations primarily in technology and financial services, and across sectors including legal, professional services, and research.</p>
         <p>What I do best is <span class="highlight">solution design</span>: understanding what an organisation needs and designing the event technology to deliver it. But I also configure platforms, build HTML emails, produce post-event reporting, coordinate events, manage programmes and do consultancy. I don't fit neatly into one box, and I'm proud to be a jack of all trades.</p>
-        <p>Whatever you have in mind, I'm interested in having the conversation. I build relationships quickly, slot right into teams, and bring the kind of support that makes the difference between a good event and a great one.</p>
+        <p>Whatever you have in mind, I'm interested in having a chat. I build relationships quickly, slot right into teams, and bring the kind of support that makes the difference between a good event and a great one.</p>
       </div>
       <div class="about-stats reveal reveal-delay-1">
         <div class="stat-card">
@@ -500,12 +496,12 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
         </form>
         <div class="form-success" id="formSuccess">
           <div class="check"><i class="fa-solid fa-circle-check" style="color:var(--pink);font-size:2rem;"></i></div>
-          <p>Thanks for reaching out. I'll be in touch soon.</p>
+          <p>Thanks for your message. I'll be in touch.</p>
         </div>
       </div>
       <div class="contact-other">
         <h3>Or reach out directly</h3>
-        <p class="cta-text">If any of this sounds like what your team needs, I'd love to have a conversation.</p>
+        <p class="cta-text">If any of this sounds like what your team needs, I'd love to have a chat.</p>
         <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2YfldDvfBLYZBT9q4uGKuTLYOF0bk13-_kf9gEMQ1f5XueT1dqLsX-EGvX1kb3dx2GRN-oefdL" target="_blank" rel="noopener noreferrer" class="book-btn-large" id="booking">Book a Chat <i class="fa-solid fa-calendar-check" style="margin-left:0.3rem"></i></a>
         <div class="contact-option">
           <div class="contact-option-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
