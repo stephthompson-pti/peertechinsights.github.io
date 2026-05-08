@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Steph Thompson | Events Professional</title>
+<title>Steph Thompson</title>
 <meta name="description" content="Steph Thompson. Events professional with 18+ years of experience. Solution design, event technology, and hands-on support for your team.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF2D78'/><text x='16' y='22' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='16' fill='white'>ST</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -537,9 +537,10 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
  
 <script>
 window.addEventListener('scroll',()=>{document.querySelector('nav').classList.toggle('scrolled',window.scrollY>20);});
-document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>{document.querySelector('.nav-links').classList.remove('open');});});
+document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',(e)=>{document.querySelector('.nav-links').classList.remove('open');setTimeout(()=>{history.replaceState(null,null,' ');},50);});});
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+window.addEventListener('load',()=>{history.replaceState(null,null,' ');});
  
 async function handleSubmit(e){
   e.preventDefault();
