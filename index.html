@@ -10,12 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
- 
+
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-36SH5FERR8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-36SH5FERR8');</script>
--->
- 
+
 <style>
 :root{
   --pink:#FF2D78;
@@ -34,18 +33,18 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:var(--body);color:var(--text);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
- 
+
 /* Skip link */
 .skip-link{position:absolute;top:-100px;left:0;background:var(--pink);color:var(--white);padding:0.5rem 1rem;z-index:200;font-weight:600;text-decoration:none;border-radius:0 0 8px 0;}
 .skip-link:focus{top:0;}
- 
+
 /* Focus states */
 *:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px;}
- 
+
 /* === SQUIGGLE CONTAINERS === */
 .squiggles{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:0;}
 .squiggles svg{position:absolute;}
- 
+
 /* === NAV === */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(17,17,17,0.97);backdrop-filter:blur(10px);}
 nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.2);}
@@ -59,7 +58,7 @@ nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.2);}
 .nav-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,45,120,0.3);}
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;}
 .hamburger span{display:block;width:24px;height:2px;background:var(--white);margin:6px 0;transition:0.3s;}
- 
+
 /* === HERO (white + vibrant squiggles) === */
 .hero{background:var(--white);position:relative;overflow:hidden;}
 .hero-inner{position:relative;z-index:1;padding:10rem 2rem 6rem;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center;}
@@ -72,13 +71,13 @@ nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.2);}
 .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,45,120,0.25);}
 .btn-secondary{color:var(--text-light);font-weight:600;text-decoration:none;font-size:1rem;transition:color 0.2s;}
 .btn-secondary:hover{color:var(--black);}
- 
+
 /* Photo */
 .hero-visual{display:flex;justify-content:center;align-items:center;position:relative;}
 .photo-frame{position:relative;width:310px;height:310px;}
 .photo-circle{width:100%;height:100%;border-radius:50%;border:6px solid var(--blue);background:var(--off-white);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;}
 .photo-circle .initials{font-family:var(--heading);font-size:5rem;color:rgba(0,0,0,0.06);font-weight:700;letter-spacing:0.05em;}
- 
+
 /* === SHARED === */
 section{position:relative;z-index:1;padding:6rem 2rem;}
 .section-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1;}
@@ -86,19 +85,19 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .section-heading{font-family:var(--heading);font-size:2.6rem;font-weight:700;margin-bottom:0.5rem;line-height:1.15;}
 .section-heading .pop{color:var(--pink);}
 .section-sub{font-size:1.05rem;margin-bottom:2.5rem;max-width:550px;}
- 
+
 /* Dark section defaults */
 .dark-section{background:var(--black);color:var(--white);}
 .dark-section .section-tag{color:var(--yellow);}
 .dark-section .section-heading{color:var(--white);}
 .dark-section .section-sub{color:rgba(255,255,255,0.6);}
- 
+
 /* Light section defaults */
 .light-section{background:var(--white);}
 .light-section .section-tag{color:var(--pink);}
 .light-section .section-heading{color:var(--black);}
 .light-section .section-sub{color:var(--text-light);}
- 
+
 /* === ABOUT (black) === */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
 .about-text{font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.85);}
@@ -113,7 +112,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .stat-number.c3{color:var(--blue);}
 .stat-number.c4{color:var(--orange);}
 .stat-label{font-size:0.85rem;color:rgba(255,255,255,0.6);font-weight:500;}
- 
+
 /* === CAPABILITIES (white) === */
 .cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
 .card{background:var(--off-white);border-radius:16px;padding:2rem;transition:transform 0.3s;position:relative;overflow:hidden;}
@@ -133,7 +132,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .card:nth-child(2) li::before{background:var(--orange);}
 .card:nth-child(3) li::before{background:var(--blue);}
 .card:nth-child(4) li::before{background:var(--black);}
- 
+
 /* === HOW I WORK (black) === */
 .how-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-bottom:2rem;}
 .how-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:1.8rem;transition:transform 0.2s;}
@@ -143,7 +142,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .how-card p{font-size:0.92rem;color:rgba(255,255,255,0.75);line-height:1.6;}
 .dark-section .meta-line{font-size:0.95rem;color:rgba(255,255,255,0.55);margin-top:0.5rem;line-height:1.7;}
 .dark-section .meta-line strong{color:var(--white);}
- 
+
 /* === PERSONAL (yellow) === */
 #personal{background:var(--yellow);color:var(--black);position:relative;overflow:hidden;}
 #personal .section-tag{color:var(--black);opacity:0.5;}
@@ -154,7 +153,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .personal-content p{margin-bottom:1.4rem;}
 .personal-content .fa-icon{margin-right:0.4rem;font-size:1rem;vertical-align:middle;color:var(--pink);}
 .personal-content .fa-icon.pride{background:linear-gradient(180deg,#E40303 0%,#E40303 16.6%,#FF8C00 16.6%,#FF8C00 33.2%,#FFED00 33.2%,#FFED00 49.8%,#008026 49.8%,#008026 66.4%,#004DFF 66.4%,#004DFF 83%,#750787 83%,#750787 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
- 
+
 /* === CONTACT (white) === */
 #contact{background:var(--white);}
 #contact .section-tag{color:var(--pink);}
@@ -173,7 +172,7 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .form-success{display:none;background:var(--black);border-radius:12px;padding:1.5rem;text-align:center;}
 .form-success .check{font-size:2rem;margin-bottom:0.5rem;}
 .form-success p{color:var(--white);font-weight:600;font-size:1.05rem;}
- 
+
 .contact-other{padding-top:0.5rem;}
 .contact-other h3{font-family:var(--heading);font-size:1.5rem;font-weight:600;margin-bottom:0.4rem;color:var(--black);}
 .contact-other .cta-text{font-size:1.05rem;color:var(--text-light);margin-bottom:1.8rem;line-height:1.7;}
@@ -186,19 +185,19 @@ section{position:relative;z-index:1;padding:6rem 2rem;}
 .contact-option a{color:var(--black);text-decoration:none;font-weight:500;transition:color 0.2s;}
 .contact-option a:hover{color:var(--pink);}
 .contact-option .label{font-size:0.78rem;color:var(--text-light);display:block;text-transform:uppercase;letter-spacing:0.5px;}
- 
+
 /* === FOOTER === */
 footer{background:var(--black);color:rgba(255,255,255,0.4);text-align:center;padding:2.5rem 2rem;font-size:0.85rem;}
 footer a{color:rgba(255,255,255,0.6);text-decoration:none;}
 footer a:hover{color:var(--pink);}
 footer .footer-dots{margin-bottom:0.8rem;}
 footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 3px;}
- 
+
 /* === ANIMATIONS === */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .reveal-delay-1{transition-delay:0.12s;}
- 
+
 /* === RESPONSIVE === */
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr;text-align:center;padding-top:8rem;gap:2.5rem;}
@@ -226,9 +225,9 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
 </style>
 </head>
 <body>
- 
+
 <a href="#about" class="skip-link">Skip to content</a>
- 
+
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
@@ -246,7 +245,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     </ul>
   </div>
 </nav>
- 
+
 <!-- HERO (white) -->
 <section class="hero">
   <div class="squiggles">
@@ -275,7 +274,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     <div class="hero-text">
       <h1>I'm <span class="accent">Steph</span>.</h1>
       <p class="subtitle">Events professional. Problem solver. Jack of all trades.</p>
-      <p class="tagline">18+ years in events, 9 years in event technology and still positively charged by the event experience. I manage, define, design, build, fix, measure and interpret all things in event tech and slot into your team like I've been there for years.</p>
+      <p class="tagline">18+ years in events, 9 years in event technology and still positively charged by the event experience. I manage, define, design, build, fix, measure and interpret all things in event technology and slot into your team like I've been there for years.</p>
       <div class="hero-buttons">
         <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2YfldDvfBLYZBT9q4uGKuTLYOF0bk13-_kf9gEMQ1f5XueT1dqLsX-EGvX1kb3dx2GRN-oefdL" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a Chat</a>
         <a href="#capabilities" class="btn-secondary">See what I bring to the table &darr;</a>
@@ -290,7 +289,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     </div>
   </div>
 </section>
- 
+
 <!-- ABOUT (black) -->
 <section id="about" class="dark-section">
   <div class="section-inner">
@@ -309,7 +308,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
         </div>
         <div class="stat-card">
           <div class="stat-number c2">9</div>
-          <div class="stat-label">Years in event tech</div>
+          <div class="stat-label">Years in event technology</div>
         </div>
         <div class="stat-card">
           <div class="stat-number c3">500+</div>
@@ -323,7 +322,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     </div>
   </div>
 </section>
- 
+
 <!-- CAPABILITIES (white) -->
 <section id="capabilities" class="light-section">
   <div class="section-inner reveal">
@@ -334,10 +333,10 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
       <div class="card">
         <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
         <h3>Event Technology &amp; Platforms</h3>
-        <p class="card-subtitle">Confident in event tech systems</p>
+        <p class="card-subtitle">Confident in event technology systems</p>
         <ul>
           <li>Define, design and configure registration, websites, apps and reporting</li>
-          <li>Take an event tech stack from ideation to launch</li>
+          <li>Take an event technology stack from ideation to launch</li>
           <li>Platform setup, testing and QA</li>
           <li>Client training and documentation</li>
         </ul>
@@ -381,7 +380,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     </div>
   </div>
 </section>
- 
+
 <!-- HOW I WORK (black + watermark squiggles) -->
 <section id="how" class="dark-section">
   <div class="squiggles">
@@ -420,7 +419,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     <p class="meta-line"><strong>Regions:</strong> Preferably UK and EMEA, but open to discussing others</p>
   </div>
 </section>
- 
+
 <!-- PERSONAL (yellow) -->
 <section id="personal">
   <div class="squiggles">
@@ -449,7 +448,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT (white) -->
 <section id="contact">
   <div class="section-inner reveal">
@@ -520,7 +519,7 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
     </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-dots">
@@ -533,21 +532,21 @@ footer .footer-dots span{display:inline-block;width:8px;height:8px;border-radius
   <p>Steph Thompson &middot; <a href="mailto:steph.thompson@peertechinsights.com">steph.thompson@peertechinsights.com</a></p>
   <p style="margin-top:0.4rem;">&copy; 2026 Steph Thompson. All rights reserved.</p>
 </footer>
- 
+
 <script>
 window.addEventListener('scroll',()=>{document.querySelector('nav').classList.toggle('scrolled',window.scrollY>20);});
 document.querySelectorAll('a[href^="#"]').forEach(l=>{l.addEventListener('click',(e)=>{e.preventDefault();const h=l.getAttribute('href');if(h==='#')return window.scrollTo({top:0,behavior:'smooth'});const t=document.querySelector(h);if(t)t.scrollIntoView({behavior:'smooth'});document.querySelector('.nav-links').classList.remove('open');history.replaceState(null,null,window.location.pathname);});});
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 window.addEventListener('load',()=>{history.replaceState(null,null,' ');});
- 
+
 async function handleSubmit(e){
   e.preventDefault();
   const btn=e.target.querySelector('button[type="submit"]');
   btn.disabled=true;btn.textContent='Sending...';
- 
+
   const fd={name:document.getElementById('name').value,email:document.getElementById('email').value,company:document.getElementById('company').value,lookingFor:document.getElementById('lookingFor').value,message:document.getElementById('message').value,mailingList:document.getElementById('mailingList').checked};
- 
+
   try{
     const res=await fetch('https://willowy-cocada-ab760b.netlify.app/.netlify/functions/submit-form',{
       method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(fd)
